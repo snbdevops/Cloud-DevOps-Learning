@@ -15,4 +15,77 @@ The main purpose of Docker is to containerize applications and to ship them and 
 
 ### II) Orchesteration:
 
-#2 CKA exam preparation by Mumshad Sir
+How do you run it in production?
+What if your application relies on other containers such as databases or messaging services or other backend services?
+What if the number of users increase and you need to scale your application? How do you scale down when the load decreases? 
+
+
+To enable these functionalities, You need an underlying platform with a set of resources and capabilities. The platform needs to orchestrate the connectivity between the containers and automatically scale up or down based on the load.
+
+This whole process of automatically deploying and managing containers is known as Container Orchestration.
+
+Below are the few Container Orchestration tools - 
+#Docker Swarm by Docker
+#Kubernetes by google
+#MESOS by apache
+
+**There are various advantages of Container Orchestration.**
+  -Your application is now highly available as hardware failures to not bring your application down because we have multiple instances of your application running on different nodes.
+  -The user traffic is load balanced across the various containers.
+  -When demand increases, deploy more instances of the applications seamlessly and within a matter of seconds.
+
+We can achieve all this by Kubernetes.
+
+Kubernetes is a container orchestration technology used to **orchestrate the deployment** and **management of hundreds and thousands of containers in a clustered environment**.
+
+We have the ability to perform all the above advantages at a service level when we run out of hardware resources, scale the number of underlying nodes up or down without having to take down the application and do all of these easily with a set of declarative object configuration files. Thats it.
+
+**Kubernetes Architecture**
+
+1) Nodes
+
+![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/d281ffc1-59d8-4be1-a083-55d7c836b13b)
+
+2) Cluster
+
+![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/cc7c7e95-ad85-48f3-bf0f-63d20a10c907)
+
+3) Master
+
+![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/1b63d299-6216-4270-ac17-06b7c249874a)
+
+4) Kubernetes Components
+a) API Server:
+
+![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/ef0f1028-a5a9-4393-bf7d-1ad0131ecc42)
+
+b) etcd:
+
+![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/c5892793-3b83-4a0d-b151-23e76c5cafbd)
+
+c) schedulers: 
+
+![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/07f195ae-ea29-4b76-8da0-95d26fbf65af)
+
+d) Controllers
+
+![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/51a0f141-b4cd-44e1-8a95-ab2e5ff7dd06)
+
+e) Container Runtimes:
+
+![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/d2dcf007-6d1b-4524-abdc-1a526e1fcd2c)
+
+f) Kubelet:
+
+![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/3d76fd1a-4197-40cc-a733-6649c7d4ccf5)
+
+5) Master vs Worker Nodes:
+
+![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/2e983cef-4e99-4fa3-bf80-c3b5be32bb97)
+
+6) Kubectl:
+
+![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/c585519d-2d1b-4b6d-8876-1c9b261c03bb)
+
+
+# 2 CKA exam preparation by Mumshad Sir
