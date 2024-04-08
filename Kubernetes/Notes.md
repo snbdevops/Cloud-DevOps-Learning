@@ -88,5 +88,6 @@ f) Kubelet: Its the agent that runs on each node in the cluster. The agents make
 
 ![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/c585519d-2d1b-4b6d-8876-1c9b261c03bb)
 
+=> PODS
 
 # 2 CKA exam preparation by Mumshad Sir
