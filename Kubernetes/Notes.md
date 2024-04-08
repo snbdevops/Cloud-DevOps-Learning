@@ -55,27 +55,28 @@ We have the ability to perform all the above advantages at a service level when 
 ![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/1b63d299-6216-4270-ac17-06b7c249874a)
 
 4) Kubernetes Components
-a) API Server:
+
+a) API Server: Acts as front-end for kubernetes.
 
 ![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/ef0f1028-a5a9-4393-bf7d-1ad0131ecc42)
 
-b) etcd:
+b) etcd: Key-value store used by kubernetes to store data used to manage the cluster.
 
 ![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/c5892793-3b83-4a0d-b151-23e76c5cafbd)
 
-c) schedulers: 
+c) schedulers: Distributing works to multiple nodes. It looks for newly created continers and assign them to nodes. 
 
 ![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/07f195ae-ea29-4b76-8da0-95d26fbf65af)
 
-d) Controllers
+d) Controllers: Controllers are brain behind orchestration. They are responsible for noticing and responding when nodes, containers or end points goes down. 
 
 ![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/51a0f141-b4cd-44e1-8a95-ab2e5ff7dd06)
 
-e) Container Runtimes:
+e) Container Runtimes: Underline software that is used to run containers. In our case here, its docker.
 
 ![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/d2dcf007-6d1b-4524-abdc-1a526e1fcd2c)
 
-f) Kubelet:
+f) Kubelet: Its the agent that runs on each node in the cluster. The agents makes sure that the containers are running in the nodes as expected.
 
 ![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/3d76fd1a-4197-40cc-a733-6649c7d4ccf5)
 
