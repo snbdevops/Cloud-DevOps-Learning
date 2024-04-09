@@ -115,5 +115,16 @@ The two containers can also communicate with each other directly by referring to
 
 ![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/53a94cb3-e738-4d75-a105-b5ef958d626b)
 
+**Understanding YAML** 
+![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/a9491861-528b-4f23-9c5e-b29c9349008e)
+
+**Creating Pod using YAML Based configuration file**
+
+Kubernetes uses YAML files as inputs for the creation of object such as PODs, Replicas, Deployments, services, etc...
+
+![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/9f3d037e-2e15-4c85-bfd0-785e860cf51c)
+
+![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/1a6177ae-108e-4db5-90d3-cbb80dc52e70)
+
 
 # 2 CKA exam preparation by Mumshad Sir
