@@ -124,7 +124,12 @@ Kubernetes uses YAML files as inputs for the creation of object such as PODs, Re
 
 ![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/9f3d037e-2e15-4c85-bfd0-785e860cf51c)
 
+![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/15ce0c4f-996d-4ad7-8111-6256e609ae6f)
+
+**Some Kubernetes Commands**
+
 ![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/1a6177ae-108e-4db5-90d3-cbb80dc52e70)
 
+``` kubectl apply -f pod.yaml ```
 
 # 2 CKA exam preparation by Mumshad Sir
