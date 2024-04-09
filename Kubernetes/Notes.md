@@ -64,11 +64,11 @@ b) etcd: Key-value store used by kubernetes to store data used to manage the clu
 
 ![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/c5892793-3b83-4a0d-b151-23e76c5cafbd)
 
-c) schedulers: Distributing works to multiple nodes. It looks for newly created continers and assign them to nodes. 
+c) schedulers: Distributing works to multiple nodes. It looks for newly created continers and assign them to nodes.
 
 ![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/07f195ae-ea29-4b76-8da0-95d26fbf65af)
 
-d) Controllers: Controllers are brain behind orchestration. They are responsible for noticing and responding when nodes, containers or end points goes down. 
+d) Controllers: Controllers are brain behind orchestration. They are responsible for noticing and responding when nodes, containers or end points goes down.
 
 ![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/51a0f141-b4cd-44e1-8a95-ab2e5ff7dd06)
 
@@ -80,14 +80,40 @@ f) Kubelet: Its the agent that runs on each node in the cluster. The agents make
 
 ![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/3d76fd1a-4197-40cc-a733-6649c7d4ccf5)
 
-5) Master vs Worker Nodes:
+5) Master vs Worker Nodes
 
 ![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/2e983cef-4e99-4fa3-bf80-c3b5be32bb97)
 
-6) Kubectl:
+6) Kubectl
 
 ![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/c585519d-2d1b-4b6d-8876-1c9b261c03bb)
 
 => PODS
+
+As we are aware with Kubernetes, our ultimate aim is to deploy our application in the form of containers on a set of machines that are configured as worker nodes in a cluster.
+
+However, Kubernetes does not deploy containers directly on the worker nodes. The containers are **encapsulated** into a Kubernetes object known as pods. A pod is a single instance of an application. A pod is the smallest object that you can create in Kubernetes.
+
+Pods usually have a 1 to 1 relationship with containers running your application to scale up, you create new pods and to scale down you delete existing pods.
+
+![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/f81dfa48-5135-450c-9922-0875d99ae433)
+
+![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/09bb3042-eee2-424c-9881-ffd43adb0825)
+
+![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/b75c2e60-e3eb-4cde-93f4-edad3baefd62)
+
+**Multi-Container Pod**
+If our intention was to scale our application, then we would need to create additional pods.
+
+But sometimes we might have a scenario where we have a helper container that might be doing some kind of supporting task for our web application, such as processing a user entered data processing a file uploaded by the user, etc.
+
+And we want these helper containers to live alongside our application container?
+
+In that case, we can have both of these containers part of the same pod so that when a new application container is created, the helper is also created and when it dies, the helper also dies since they are part of the same pod.
+
+The two containers can also communicate with each other directly by referring to each other as local host since they share the same network space plus, they can easily share the same storage space as well.
+
+![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/53a94cb3-e738-4d75-a105-b5ef958d626b)
+
 
 # 2 CKA exam preparation by Mumshad Sir
