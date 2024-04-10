@@ -138,30 +138,18 @@ Replicaset is a object of kubernetes used for HA, Loadbalancing between pods.
 
 Below is the example for replicasets.yaml file -
 
-**apiVersion: apps/v1
-kind: ReplicaSet
-metadata:
-  name: my-replica-set
-spec:
-  replicas: 4
-  template:
-    metadata:
-      name: myapp-pod
-      labels:
-        app: myapp
-    spec:
-      containers:
-        - name: nginx
-          image: nginx
-  selector:
-    matchLabels:
-        app: myapp**
+![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/476406c5-ba93-4e9c-9a42-5dd7a6f5365a)
 
 Note: 
 1. apiVersion should be 'apps/v1' and NOT just 'v1'.
 2. kind should be 'ReplicaSet'. Keep in mind that its case sensetive.
 3. Inside spec, there should be 3 parameters - 'replicas','template','selector'. 
 4. **replicas** contains number of replicas required. **template** section contains pods details with image details that needs to be created with this replicaset. **selector** contains linking of specific pods with replica sets with the help of 'matchLabels' parameter
-   
+
+**==> Deployments**
+
+![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/17eb4dd3-6bb6-4dfc-a02c-709fc61b7dd0)
+
+Deployment manifest files are similar to replicasets. Just we need to replace kind part from 'ReplicaSet' to 'Deployment'.
 
 # 2 CKA exam preparation by Mumshad Sir
