@@ -88,7 +88,7 @@ f) Kubelet: Its the agent that runs on each node in the cluster. The agents make
 
 ![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/c585519d-2d1b-4b6d-8876-1c9b261c03bb)
 
-=> PODS
+**==> PODS**
 
 As we are aware with Kubernetes, our ultimate aim is to deploy our application in the form of containers on a set of machines that are configured as worker nodes in a cluster.
 
@@ -132,6 +132,36 @@ Kubernetes uses YAML files as inputs for the creation of object such as PODs, Re
 
 ![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/1a6177ae-108e-4db5-90d3-cbb80dc52e70)
 
+**==> Replica Sets**
 
+Replicaset is a object of kubernetes used for HA, Loadbalancing between pods.
+
+Below is the example for replicasets.yaml file -
+
+**apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: my-replica-set
+spec:
+  replicas: 4
+  template:
+    metadata:
+      name: myapp-pod
+      labels:
+        app: myapp
+    spec:
+      containers:
+        - name: nginx
+          image: nginx
+  selector:
+    matchLabels:
+        app: myapp**
+
+Note: 
+1. apiVersion should be 'apps/v1' and NOT just 'v1'.
+2. kind should be 'ReplicaSet'. Keep in mind that its case sensetive.
+3. Inside spec, there should be 3 parameters - 'replicas','template','selector'. 
+4. **replicas** contains number of replicas required. **template** section contains pods details with image details that needs to be created with this replicaset. **selector** contains linking of specific pods with replica sets with the help of 'matchLabels' parameter
+   
 
 # 2 CKA exam preparation by Mumshad Sir
