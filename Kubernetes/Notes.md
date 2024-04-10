@@ -156,4 +156,9 @@ Sample code -
 
 ![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/352d585d-eec5-400b-9f6a-a00f63109f7c)
 
+Some important commands for deployments, rollouts, etc
+
+![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/50d2a069-b445-42af-a8dd-558e9efe8844)
+
+
 # 2 CKA exam preparation by Mumshad Sir
