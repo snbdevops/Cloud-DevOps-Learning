@@ -152,4 +152,8 @@ Note:
 
 Deployment manifest files are similar to replicasets. Just we need to replace kind part from 'ReplicaSet' to 'Deployment'.
 
+Sample code -
+
+![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/352d585d-eec5-400b-9f6a-a00f63109f7c)
+
 # 2 CKA exam preparation by Mumshad Sir
