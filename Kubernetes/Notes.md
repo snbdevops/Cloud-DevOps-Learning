@@ -152,13 +152,77 @@ Note:
 
 Deployment manifest files are similar to replicasets. Just we need to replace kind part from 'ReplicaSet' to 'Deployment'.
 
-Sample code -
+Sample code :
 
 ![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/352d585d-eec5-400b-9f6a-a00f63109f7c)
 
 Some important commands for deployments, rollouts, etc
 
 ![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/50d2a069-b445-42af-a8dd-558e9efe8844)
+
+kubectl create -f deployment.yaml
+
+kubectl rollout status deployment.apps/myapp-deployment
+
+kubectl rollout history deployment.apps/myapp-deployment
+
+kubectl create -f deployment.yaml --record
+
+kubectl edit deployment myapp-deployment --record
+
+note - now again run the status command to chk...
+
+kubectl set image deployment myapp-deployment nginx=nginx:1.18-perl --record
+
+kubectl rollout undo deployment/myapp-deployment deployment.apps/myapp-deployment rolled back
+
+## Networking in Kubernetes
+
+![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/0dd0dda2-a42c-481e-9c99-9c87b6993628)
+
+![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/5b61d687-80ee-4f16-b55e-a767b859bb89)
+
+![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/d7636c02-c4a7-4ba1-bc31-085a4dd6ed29)
+
+ **==> Kubernetes Services**
+
+ Kubernetes services enable communication between various components within and outside of the application. Kubernetes Services helps us connect applications together with other applications or users.
+
+For example, our application has groups of parts running various sections, such as a group for serving a front end load to users and other group for running back end processes, and a third group connecting to an external data source. It is services that enable connectivity between these groups of parts. Services enable the front end application to be made available to end users.
+
+It helps communication between back end and front end parts and helps in establishing connectivity to an external data source. Thus, services enable loose coupling between micro services in our application.
+
+![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/dc026a1e-9284-4513-aa72-50a4bb4fe92d)
+
+![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/0873dc09-51b6-4437-b601-e51cab563e69)
+
+![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/ac3e5cad-9d60-4352-87e0-774790dc6477)
+
+Same Node Pods -
+
+![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/36f590ea-7807-4d10-ae64-4c612120e51c)
+
+Multi-Node Pods - 
+
+![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/94d03740-707b-403f-a180-0c9eaef0abfc)
+
+Types of Services
+
+a) Node-Port
+
+![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/fe55a616-e686-4630-855e-3af741cd4b25)
+
+![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/86ba5bb1-00b8-463c-a39a-e69bac0eac34)
+
+b) Cluster IP
+
+![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/ef967fed-facf-4d03-8707-6ba7d2123aed)
+
+c) Load Balancer
+
+![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/0627afe9-2745-4193-998c-0af8d95ce6ed)
+
+![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/fc9e8283-66ad-45a5-8020-1c8b9eec9ec5)
 
 
 # 2 CKA exam preparation by Mumshad Sir
