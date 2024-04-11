@@ -224,3 +224,20 @@ c) Load Balancer
 
 ![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/fc9e8283-66ad-45a5-8020-1c8b9eec9ec5)
 
+-->Microservice Architecture - Deploying an end to end Infra with app on kubernetes.
+
+![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/44035c25-e38a-4d00-b255-f6fdcb1d5153)
+
+Scenario 1) Running Docker containers for all the componentes used to run the app & linking the components
+
+![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/b605f116-c77f-41b3-8219-4ec6f480ee97)
+
+Scenario 2) How voting app setup to be done in Kubernetes
+
+![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/b280cf9d-c202-46a9-88b1-edd24dbcb28f)
+
+![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/e7cfd688-86ba-4a62-8b58-5bc432b2ac94)
+
+
+
+
