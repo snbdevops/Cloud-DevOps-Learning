@@ -1,4 +1,4 @@
-# 1 Kubernetes for Beginers by Mumshad Sir
+# Kubernetes for Beginers by Mumshad Sir
 
 Kubernetes = Containers + Orchesteration
 
@@ -224,5 +224,3 @@ c) Load Balancer
 
 ![image](https://github.com/snbdevops/Cloud-DevOps-Learning/assets/83505877/fc9e8283-66ad-45a5-8020-1c8b9eec9ec5)
 
-
-# 2 CKA exam preparation by Mumshad Sir
