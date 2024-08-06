@@ -3,6 +3,7 @@ comprehensive list of 50 scenario-based interview questions and answers focused 
 1. How do you list all S3 buckets in a region using Boto3?
 
 Answer:
+
 ```python
 import boto3
 
